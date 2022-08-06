@@ -1,6 +1,6 @@
 # 22.08 (2022-08-02)
 
-A big _thank you_ to our contributors! This release had 82 contributors.
+A big _thank you_ to our contributors! This release had 88 contributors.
 
 As usual, the following is a summary of each of the changes since the last release.
 For the full log, check out the [git log](https://github.com/helix-editor/helix/compare/22.05..22.08).
@@ -11,6 +11,7 @@ Breaking changes:
 - `A-Left` and `A-Right` have become `C-Left` and `C-Right` for word-wise motion ([#2500](https://github.com/helix-editor/helix/pull/2500))
 - The `catppuccin` theme's name has been corrected from `catpuccin` ([#2713](https://github.com/helix-editor/helix/pull/2713))
 - `catppuccin` has been replaced by its variants, `catppuccin_frappe`, `catppuccin_latte`, `catppuccin_macchiato`, `catppuccin_mocha` ([#3281](https://github.com/helix-editor/helix/pull/3281))
+- `C-n` and `C-p` have been removed from the default insert mode keymap ([#3340](https://github.com/helix-editor/helix/pull/3340))
 
 Features:
 
@@ -24,6 +25,7 @@ Features:
 - Configurable statusline ([#2434](https://github.com/helix-editor/helix/pull/2434))
 - LSP SignatureHelp ([#1755](https://github.com/helix-editor/helix/pull/1755), [a8b123f](https://github.com/helix-editor/helix/commit/a8b123f))
 - A picker for the jumplist ([#3033](https://github.com/helix-editor/helix/pull/3033))
+- Configurable external formatter binaries ([#2942](https://github.com/helix-editor/helix/pull/2942))
 
 Commands:
 
@@ -98,6 +100,15 @@ Usability improvements and fixes:
 - Use OR of all selections when `search_selection` acts on multiple selections ([#3138](https://github.com/helix-editor/helix/pull/3138))
 - Add clipboard information to logs and the healthcheck ([#3271](https://github.com/helix-editor/helix/pull/3271))
 - Fix align selection behavior on tabs ([#3276](https://github.com/helix-editor/helix/pull/3276))
+- Fix terminal cursor shape reset ([#3289](https://github.com/helix-editor/helix/pull/3289))
+- Add an `injection.include-unnamed-children` predicate to injections queries ([#3129](https://github.com/helix-editor/helix/pull/3129))
+- Add a `-c`/`--config` CLI flag for specifying config file location ([#2666](https://github.com/helix-editor/helix/pull/2666))
+- Detect indent-style in `:set-language` command ([#3330](https://github.com/helix-editor/helix/pull/3330))
+- Fix non-deterministic highlighting ([#3275](https://github.com/helix-editor/helix/pull/3275))
+- Avoid setting the stdin handle when not necessary ([#3248](https://github.com/helix-editor/helix/pull/3248))
+- Fix indent guide styling ([#3324](https://github.com/helix-editor/helix/pull/3324))
+- Fix tab highlight when tab is partially visible ([#3313](https://github.com/helix-editor/helix/pull/3313))
+- Add completion for nested settings ([#3183](https://github.com/helix-editor/helix/pull/3183))
 
 Themes:
 
@@ -123,6 +134,10 @@ Themes:
 - Update `onelight` ([#3226](https://github.com/helix-editor/helix/pull/3226))
 - Add `base16_transparent` ([#3216](https://github.com/helix-editor/helix/pull/3216))
 - Add `flatwhite` ([#3236](https://github.com/helix-editor/helix/pull/3236))
+- Update `dark_plus` ([#3302](https://github.com/helix-editor/helix/pull/3302))
+- Add `doom_acario_dark` ([#3308](https://github.com/helix-editor/helix/pull/3308))
+- Add `rose_pine_moon` ([#3229](https://github.com/helix-editor/helix/pull/3229))
+- Update `spacebones_light` ([#3342](https://github.com/helix-editor/helix/pull/3342))
 
 LSP:
 
@@ -166,7 +181,7 @@ Updated languages and queries:
 - Nickel ([#2859](https://github.com/helix-editor/helix/pull/2859))
 - Add `Rakefile` and `Gemfile` to Ruby file-types ([#2875](https://github.com/helix-editor/helix/pull/2875))
 - Erlang ([#2910](https://github.com/helix-editor/helix/pull/2910))
-- Markdown ([#2910](https://github.com/helix-editor/helix/pull/2910))
+- Markdown ([#2910](https://github.com/helix-editor/helix/pull/2910), [#3108](https://github.com/helix-editor/helix/pull/3108))
 - Bash ([#2910](https://github.com/helix-editor/helix/pull/2910))
 - Rust ([#2910](https://github.com/helix-editor/helix/pull/2910))
 - Edoc ([#2910](https://github.com/helix-editor/helix/pull/2910))
@@ -178,15 +193,15 @@ Updated languages and queries:
 - Add Haskell LSP roots ([#2954](https://github.com/helix-editor/helix/pull/2954))
 - Ledger ([#2936](https://github.com/helix-editor/helix/pull/2936), [#2988](https://github.com/helix-editor/helix/pull/2988))
 - Nickel ([#2987](https://github.com/helix-editor/helix/pull/2987))
-- JavaScript ([#2961](https://github.com/helix-editor/helix/pull/2961), [#3219](https://github.com/helix-editor/helix/pull/3219), [#3213](https://github.com/helix-editor/helix/pull/3213), [#3280](https://github.com/helix-editor/helix/pull/3280))
-- TypeScript ([#2961](https://github.com/helix-editor/helix/pull/2961), [#3219](https://github.com/helix-editor/helix/pull/3219), [#3213](https://github.com/helix-editor/helix/pull/3213))
+- JavaScript/TypeScript ([#2961](https://github.com/helix-editor/helix/pull/2961), [#3219](https://github.com/helix-editor/helix/pull/3219), [#3213](https://github.com/helix-editor/helix/pull/3213), [#3280](https://github.com/helix-editor/helix/pull/3280), [#3301](https://github.com/helix-editor/helix/pull/3301))
 - GLSL ([#3051](https://github.com/helix-editor/helix/pull/3051))
-- Fix locals tracking in Rust ([#3027](https://github.com/helix-editor/helix/pull/3027), [#3212](https://github.com/helix-editor/helix/pull/3212))
+- Fix locals tracking in Rust ([#3027](https://github.com/helix-editor/helix/pull/3027), [#3212](https://github.com/helix-editor/helix/pull/3212), [#3345](https://github.com/helix-editor/helix/pull/3345))
 - Verilog ([#3158](https://github.com/helix-editor/helix/pull/3158))
 - Ruby ([#3173](https://github.com/helix-editor/helix/pull/3173))
 - Svelte ([#3147](https://github.com/helix-editor/helix/pull/3147))
 - Add Elixir and HEEx comment textobjects ([#3179](https://github.com/helix-editor/helix/pull/3179))
 - Python ([#3103](https://github.com/helix-editor/helix/pull/3103), [#3201](https://github.com/helix-editor/helix/pull/3201), [#3284](https://github.com/helix-editor/helix/pull/3284))
+- PHP ([#3317](https://github.com/helix-editor/helix/pull/3317))
 
 Packaging:
 
@@ -194,6 +209,8 @@ Packaging:
 - Add cachix information to the Nix flake ([#2999](https://github.com/helix-editor/helix/pull/2999))
 - Pass makeWrapperArgs to wrapProgram in the Nix flake ([#3003](https://github.com/helix-editor/helix/pull/3003))
 - Add a way to override which grammars are built by Nix ([#3141](https://github.com/helix-editor/helix/pull/3141))
+- Add a GitHub actions release for `aarch64-macos` ([#3137](https://github.com/helix-editor/helix/pull/3137))
+- Add shell auto-completions for Elvish ([#3331](https://github.com/helix-editor/helix/pull/3331))
 
 # 22.05 (2022-05-28)
 
