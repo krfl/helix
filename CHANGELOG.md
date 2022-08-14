@@ -165,7 +165,7 @@ New languages:
 - Ungrammar ([#3048](https://github.com/helix-editor/helix/pull/3048))
 - SCSS ([#3074](https://github.com/helix-editor/helix/pull/3074))
 - Go Template ([#3091](https://github.com/helix-editor/helix/pull/3091))
-- Graphiz dot ([#3241](https://github.com/helix-editor/helix/pull/3241))
+- Graphviz dot ([#3241](https://github.com/helix-editor/helix/pull/3241))
 - Cue ([#3262](https://github.com/helix-editor/helix/pull/3262))
 
 Updated languages and queries:
