@@ -105,10 +105,11 @@ Usability improvements and fixes:
 - Add a `-c`/`--config` CLI flag for specifying config file location ([#2666](https://github.com/helix-editor/helix/pull/2666))
 - Detect indent-style in `:set-language` command ([#3330](https://github.com/helix-editor/helix/pull/3330))
 - Fix non-deterministic highlighting ([#3275](https://github.com/helix-editor/helix/pull/3275))
-- Avoid setting the stdin handle when not necessary ([#3248](https://github.com/helix-editor/helix/pull/3248))
+- Avoid setting the stdin handle when not necessary ([#3248](https://github.com/helix-editor/helix/pull/3248), [#3379](https://github.com/helix-editor/helix/pull/3379))
 - Fix indent guide styling ([#3324](https://github.com/helix-editor/helix/pull/3324))
 - Fix tab highlight when tab is partially visible ([#3313](https://github.com/helix-editor/helix/pull/3313))
 - Add completion for nested settings ([#3183](https://github.com/helix-editor/helix/pull/3183))
+- Advertise WorkspaceSymbolClientCapabilities LSP client capability ([#3361](https://github.com/helix-editor/helix/pull/3361))
 
 Themes:
 
@@ -132,12 +133,13 @@ Themes:
 - Update `monokai` ([#3131](https://github.com/helix-editor/helix/pull/3131))
 - Add `ayu_dark`, `ayu_light`, `ayu_mirage` ([#3184](https://github.com/helix-editor/helix/pull/3184))
 - Update `onelight` ([#3226](https://github.com/helix-editor/helix/pull/3226))
-- Add `base16_transparent` ([#3216](https://github.com/helix-editor/helix/pull/3216))
+- Add `base16_transparent` ([#3216](https://github.com/helix-editor/helix/pull/3216), [b565fff](https://github.com/helix-editor/helix/commit/b565fff))
 - Add `flatwhite` ([#3236](https://github.com/helix-editor/helix/pull/3236))
 - Update `dark_plus` ([#3302](https://github.com/helix-editor/helix/pull/3302))
 - Add `doom_acario_dark` ([#3308](https://github.com/helix-editor/helix/pull/3308))
 - Add `rose_pine_moon` ([#3229](https://github.com/helix-editor/helix/pull/3229))
 - Update `spacebones_light` ([#3342](https://github.com/helix-editor/helix/pull/3342))
+- Fix typos in themes ([8deaebd](https://github.com/helix-editor/helix/commit/8deaebd), [#3412](https://github.com/helix-editor/helix/pull/3412))
 
 LSP:
 
@@ -167,6 +169,8 @@ New languages:
 - Go Template ([#3091](https://github.com/helix-editor/helix/pull/3091))
 - Graphviz dot ([#3241](https://github.com/helix-editor/helix/pull/3241))
 - Cue ([#3262](https://github.com/helix-editor/helix/pull/3262))
+- Slint ([#3355](https://github.com/helix-editor/helix/pull/3355))
+- Beancount ([#3297](https://github.com/helix-editor/helix/pull/3297))
 
 Updated languages and queries:
 
@@ -181,9 +185,9 @@ Updated languages and queries:
 - Nickel ([#2859](https://github.com/helix-editor/helix/pull/2859))
 - Add `Rakefile` and `Gemfile` to Ruby file-types ([#2875](https://github.com/helix-editor/helix/pull/2875))
 - Erlang ([#2910](https://github.com/helix-editor/helix/pull/2910))
-- Markdown ([#2910](https://github.com/helix-editor/helix/pull/2910), [#3108](https://github.com/helix-editor/helix/pull/3108))
+- Markdown ([#2910](https://github.com/helix-editor/helix/pull/2910), [#3108](https://github.com/helix-editor/helix/pull/3108), [#3400](https://github.com/helix-editor/helix/pull/3400))
 - Bash ([#2910](https://github.com/helix-editor/helix/pull/2910))
-- Rust ([#2910](https://github.com/helix-editor/helix/pull/2910))
+- Rust ([#2910](https://github.com/helix-editor/helix/pull/2910), [#3397](https://github.com/helix-editor/helix/pull/3397))
 - Edoc ([#2910](https://github.com/helix-editor/helix/pull/2910))
 - HTML ([#2910](https://github.com/helix-editor/helix/pull/2910))
 - Make ([#2910](https://github.com/helix-editor/helix/pull/2910))
@@ -202,6 +206,8 @@ Updated languages and queries:
 - Add Elixir and HEEx comment textobjects ([#3179](https://github.com/helix-editor/helix/pull/3179))
 - Python ([#3103](https://github.com/helix-editor/helix/pull/3103), [#3201](https://github.com/helix-editor/helix/pull/3201), [#3284](https://github.com/helix-editor/helix/pull/3284))
 - PHP ([#3317](https://github.com/helix-editor/helix/pull/3317))
+- Latex ([#3370](https://github.com/helix-editor/helix/pull/3370))
+- Clojure ([#3387](https://github.com/helix-editor/helix/pull/3387))
 
 Packaging:
 
