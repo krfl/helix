@@ -1,6 +1,6 @@
 # 22.08 (2022-08-02)
 
-A big _thank you_ to our contributors! This release had 88 contributors.
+A big _thank you_ to our contributors! This release had 87 contributors.
 
 As usual, the following is a summary of each of the changes since the last release.
 For the full log, check out the [git log](https://github.com/helix-editor/helix/compare/22.05..22.08).
@@ -110,6 +110,13 @@ Usability improvements and fixes:
 - Fix tab highlight when tab is partially visible ([#3313](https://github.com/helix-editor/helix/pull/3313))
 - Add completion for nested settings ([#3183](https://github.com/helix-editor/helix/pull/3183))
 - Advertise WorkspaceSymbolClientCapabilities LSP client capability ([#3361](https://github.com/helix-editor/helix/pull/3361))
+- Remove duplicate entries from the theme picker ([#3439](https://github.com/helix-editor/helix/pull/3439))
+- Shorted output for grammar fetching and building ([#3396](https://github.com/helix-editor/helix/pull/3396))
+- Add a `tabpad` option for visible tab padding whitespace characters ([#3458](https://github.com/helix-editor/helix/pull/3458))
+- Make DAP external terminal provider configurable ([cb7615e](https://github.com/helix-editor/helix/commit/cb7615e))
+- Use health checkmark character with shorter width ([#3505](https://github.com/helix-editor/helix/pull/3505))
+- Reset document mode to normal on view focus loss ([e4c9d40](https://github.com/helix-editor/helix/commit/e4c9d40))
+- Render indented code-blocks in markdown ([#3503](https://github.com/helix-editor/helix/pull/3503))
 
 Themes:
 
@@ -136,10 +143,13 @@ Themes:
 - Add `base16_transparent` ([#3216](https://github.com/helix-editor/helix/pull/3216), [b565fff](https://github.com/helix-editor/helix/commit/b565fff))
 - Add `flatwhite` ([#3236](https://github.com/helix-editor/helix/pull/3236))
 - Update `dark_plus` ([#3302](https://github.com/helix-editor/helix/pull/3302))
-- Add `doom_acario_dark` ([#3308](https://github.com/helix-editor/helix/pull/3308))
+- Add `doom_acario_dark` ([#3308](https://github.com/helix-editor/helix/pull/3308), [#3539](https://github.com/helix-editor/helix/pull/3539))
 - Add `rose_pine_moon` ([#3229](https://github.com/helix-editor/helix/pull/3229))
 - Update `spacebones_light` ([#3342](https://github.com/helix-editor/helix/pull/3342))
 - Fix typos in themes ([8deaebd](https://github.com/helix-editor/helix/commit/8deaebd), [#3412](https://github.com/helix-editor/helix/pull/3412))
+- Add `emacs` ([#3410](https://github.com/helix-editor/helix/pull/3410))
+- Add `papercolor-light` ([#3426](https://github.com/helix-editor/helix/pull/3426), [#3470](https://github.com/helix-editor/helix/pull/3470))
+- Add `penumbra+` ([#3398](https://github.com/helix-editor/helix/pull/3398))
 
 LSP:
 
@@ -171,6 +181,11 @@ New languages:
 - Cue ([#3262](https://github.com/helix-editor/helix/pull/3262))
 - Slint ([#3355](https://github.com/helix-editor/helix/pull/3355))
 - Beancount ([#3297](https://github.com/helix-editor/helix/pull/3297))
+- Taskwarrior ([#3468](https://github.com/helix-editor/helix/pull/3468))
+- xit ([#3521](https://github.com/helix-editor/helix/pull/3521))
+- ESDL ([#3526](https://github.com/helix-editor/helix/pull/3526))
+- Awk ([#3528](https://github.com/helix-editor/helix/pull/3528), [#3535](https://github.com/helix-editor/helix/pull/3535))
+- Pascal ([#3542](https://github.com/helix-editor/helix/pull/3542))
 
 Updated languages and queries:
 
@@ -201,13 +216,19 @@ Updated languages and queries:
 - GLSL ([#3051](https://github.com/helix-editor/helix/pull/3051))
 - Fix locals tracking in Rust ([#3027](https://github.com/helix-editor/helix/pull/3027), [#3212](https://github.com/helix-editor/helix/pull/3212), [#3345](https://github.com/helix-editor/helix/pull/3345))
 - Verilog ([#3158](https://github.com/helix-editor/helix/pull/3158))
-- Ruby ([#3173](https://github.com/helix-editor/helix/pull/3173))
+- Ruby ([#3173](https://github.com/helix-editor/helix/pull/3173), [#3527](https://github.com/helix-editor/helix/pull/3527))
 - Svelte ([#3147](https://github.com/helix-editor/helix/pull/3147))
 - Add Elixir and HEEx comment textobjects ([#3179](https://github.com/helix-editor/helix/pull/3179))
 - Python ([#3103](https://github.com/helix-editor/helix/pull/3103), [#3201](https://github.com/helix-editor/helix/pull/3201), [#3284](https://github.com/helix-editor/helix/pull/3284))
 - PHP ([#3317](https://github.com/helix-editor/helix/pull/3317))
 - Latex ([#3370](https://github.com/helix-editor/helix/pull/3370))
 - Clojure ([#3387](https://github.com/helix-editor/helix/pull/3387))
+- Swift ([#3461](https://github.com/helix-editor/helix/pull/3461))
+- C# ([#3480](https://github.com/helix-editor/helix/pull/3480), [#3494](https://github.com/helix-editor/helix/pull/3494))
+- Org ([#3489](https://github.com/helix-editor/helix/pull/3489))
+- Elm ([#3497](https://github.com/helix-editor/helix/pull/3497))
+- Dart ([#3419](https://github.com/helix-editor/helix/pull/3419))
+- Julia ([#3507](https://github.com/helix-editor/helix/pull/3507))
 
 Packaging:
 
